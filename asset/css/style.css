@@ -1,8 +1,8 @@
 /* font nikosh */
-@font-face {
+/* @font-face {
     font-family: nikosh;
     src: url(../fonts/Nikosh.ttf);
-}
+} */
 
 
 *{
@@ -19,4 +19,7 @@
 
 .about-heading .h3 {
     margin-bottom: 1rem;
+}
+.about-para{
+    font-size: 20px;
 }
