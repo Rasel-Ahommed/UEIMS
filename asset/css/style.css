@@ -1,8 +1,8 @@
 /* font nikosh */
-/* @font-face {
+@font-face {
     font-family: nikosh;
     src: url(../fonts/Nikosh.ttf);
-} */
+}
 
 
 *{
@@ -10,6 +10,10 @@
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
+}
+
+.about {
+    background-color: #f9f9f9;
 }
 
 .about-us{
@@ -22,4 +26,49 @@
 }
 .about-para{
     font-size: 20px;
+}
+
+.about-image {
+    margin-block: auto;
+}
+
+.about-image img {
+    width: 40vw;
+    max-width: 600px;
+    margin-block: auto;
+}
+
+/* why choose us section css */
+
+.choosing {
+    font-family: 'nikosh';
+}
+
+.choosing-heading {
+    text-align: center;
+}
+
+.choosing-heading p:last-child {
+    color: #3f3f3f;
+}
+
+.choosing-content {
+    display: flex;
+    padding-block: 3rem;
+}
+
+.choosing-reason-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.choose-para .choose-para-head{
+    font-size: 24px;
+}
+
+.choose-para .choose-para-body {
+    font-size: 18px;
+    color: #3f3f3f;
 }
