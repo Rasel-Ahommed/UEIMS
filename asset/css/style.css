@@ -12,6 +12,70 @@
     box-sizing: border-box;
 }
 
+/* header section css start  */
+.heading{
+    background-image: linear-gradient(to right, #09559a, #064c88, #064377, #073a66, #093155);;
+    height: 100vh;
+}
+.navItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navItem img {
+    width: calc(20px + 5vw);
+    padding: 5px;
+    filter: drop-shadow(-1px 0px 0px white);
+}
+.navContactInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 40%;
+    color: white;
+}
+.navContactInfo i {
+    margin-inline: 10px;
+    font-size: calc(15px + 0.5vw);
+}
+
+/* header containte start */
+.headercontant{
+    display: flex;
+    justify-content: space-between;
+    height: 90%;
+}
+.leftContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.leftImg{  
+    position: relative;
+}
+.laptop {
+    width: calc(200px + 30vw);  
+}
+.mobile {
+    width: calc(69px + 6vw);
+    position: absolute;
+    bottom: 0;
+    right: -85px;
+}
+.file {
+    width: calc(50px + 2.5vw);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* header containt end  */
+
+/* header section css end  */
+
+
+
+
+
 .about-us{
     display: flex;
     font-family: 'nikosh';
@@ -22,49 +86,4 @@
 }
 .about-para{
     font-size: 20px;
-}
-
-.about-image {
-    margin-block: auto;
-}
-
-.about-image img {
-    width: 40vw;
-    max-width: 600px;
-    margin-block: auto;
-}
-
-/* why choose us section css */
-
-.choosing {
-    font-family: 'nikosh';
-}
-
-.choosing-heading {
-    text-align: center;
-}
-
-.choosing-heading p:last-child {
-    color: #3f3f3f;
-}
-
-.choosing-content {
-    display: flex;
-    padding-block: 3rem;
-}
-
-.choosing-reason-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-}
-
-.choose-para .choose-para-head{
-    font-size: 24px;
-}
-
-.choose-para .choose-para-body {
-    font-size: 18px;
-    color: #3f3f3f;
 }
