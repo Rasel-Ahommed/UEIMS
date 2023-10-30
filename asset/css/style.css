@@ -126,7 +126,7 @@
 }
 
 .rightContent h1 {
-    font-size: calc(20px + 1vw);
+    font-size: 32px;
     padding-bottom: calc(10px + 1vw);
 }
 
@@ -189,6 +189,12 @@ img.shape6 {
     right: 50%;
     animation: rotation 8s infinite linear;
 }
+img.shape7 {
+    position: absolute;
+    bottom: 66%;
+    left: 8%;
+    animation: rotation 8s infinite linear;
+}
 
 @keyframes rotation {
     from {
@@ -248,13 +254,48 @@ img.shape6 {
 }
 
 .left-img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 80px;
     position: absolute;
-    margin-left: 110%;
+    margin-left: 108%;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation: phoneView 4s ease-in-out infinite;
 }
+@keyframes phoneView {
+    0% {
+        transform: translate(0, -0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+#timeing{
+    animation: timming 3s ease-in-out infinite
+}
+@keyframes timming {
+    0% {
+        transform: translate(0, -0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
 .whyUsimg {
     width: 54%;
     height: auto;
@@ -263,16 +304,33 @@ img.shape6 {
     height: auto;
     max-width: 100%;
 }
+.whyUsBox{
+    text-align: center;
+}
+.whyUsBox h5 {
+    font-size: calc(18px + 1vw);
+}
+
+.whyUsBox p {
+    font-size: calc(11px + 0.5vw);
+}
 
 .right-img {
-    width: 80px px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 80px;
     position: absolute;
     margin-left: -30%;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation: phoneView 4s ease-in-out infinite;
 }
-
+.bg-m-orange {
+    background: linear-gradient(45deg, #ff808b, #f79099) !important;
+}
 
 /* feature css */
 
