@@ -272,3 +272,19 @@ img.shape6 {
     margin-left: -30%;
     z-index: 1;
 }
+
+
+/* feature css */
+
+.features {
+    font-family: 'nikosh';
+}
+
+.feature-card {
+    text-align: center;
+    border: 1px solid #3f3f3f;
+}
+
+.feture-card-img img{
+    width: 50px;
+}
