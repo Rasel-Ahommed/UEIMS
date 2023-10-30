@@ -5,18 +5,23 @@
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    font-family: nikosh;
+    scroll-behavior: smooth;
 }
 
 /* header section css start  */
-.heading{
-    background-image: linear-gradient(to right, #09559a, #064c88, #064377, #073a66, #093155);;
+.heading {
+    background-image: linear-gradient(to right, #09559a, #064c88, #064377, #073a66, #093155);
+    ;
     height: 100vh;
+    position: relative;
 }
+
 .navItem {
     display: flex;
     justify-content: space-between;
@@ -27,6 +32,7 @@
     padding: 5px;
     filter: drop-shadow(-1px 0px 0px white);
 }
+
 .navContactInfo {
     display: flex;
     justify-content: space-around;
@@ -34,47 +40,173 @@
     min-width: 40%;
     color: white;
 }
+
 .navContactInfo i {
     margin-inline: 10px;
     font-size: calc(15px + 0.5vw);
 }
 
 /* header containte start */
-.headercontant{
+.headercontant {
     display: flex;
     justify-content: space-between;
     height: 90%;
+    position: relative;
+    z-index: 1;
 }
+
 .leftContainer {
     height: 100%;
     display: flex;
     align-items: center;
 }
-.leftImg{  
+
+.leftImg {
     position: relative;
 }
+
 .laptop {
-    width: calc(200px + 30vw);  
+    width: calc(200px + 25vw);
 }
+
 .mobile {
     width: calc(69px + 6vw);
     position: absolute;
-    bottom: 0;
-    right: -85px;
+    bottom: 32px;
+    right: -70px;
+    animation: floating 5s ease-in-out infinite;
 }
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
 .file {
     width: calc(50px + 2.5vw);
     position: absolute;
-    top: 0;
+    bottom: 50px;
     left: 0;
+    animation: floatingFile 3s ease-in-out infinite
 }
+
+@keyframes floatingFile {
+    0% {
+        transform: translate(0, -0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
+.rightContainer {
+    display: flex;
+    align-items: center;
+}
+
+.rightContent {
+    color: white;
+    text-align: center;
+    padding-left: calc(10px + 6vw);
+    ;
+}
+
+.rightContent h1 {
+    font-size: calc(20px + 1vw);
+    padding-bottom: calc(10px + 1vw);
+}
+
+.rightContent p {
+    font-size: 18px;
+    color: #f9f9f9;
+}
+
+.rightBtn {
+    padding-top: 20px;
+}
+
+.rightBtn button {
+    font-size: 20px;
+}
+
+img.shape1 {
+    position: absolute;
+    top: 22%;
+    right: 8%;
+    opacity: 0.7;
+    animation: rotation 8s infinite linear;
+}
+
+img.shape2 {
+    width: 30px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    opacity: 0.7;
+    animation: rotation 8s infinite linear;
+}
+
+img.shape3 {
+    position: absolute;
+    top: 17%;
+    left: 31%;
+    width: 25px;
+    opacity: 0.7;
+    animation: rotation 8s infinite linear;
+}
+
+img.shape4 {
+    position: absolute;
+    top: 32%;
+    right: 20%;
+    animation: rotation 8s infinite linear;
+}
+
+img.shape5 {
+    position: absolute;
+    top: 66%;
+    right: 34%;
+    animation: rotation 8s infinite linear;
+}
+
+img.shape6 {
+    position: absolute;
+    top: 13%;
+    right: 50%;
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* header containt end  */
 
 /* header section css end  */
 
 
 
-.about-us{
+.about-us {
     display: flex;
     font-family: 'nikosh';
 }
@@ -82,7 +214,8 @@
 .about-heading .h3 {
     margin-bottom: 1rem;
 }
-.about-para{
+
+.about-para {
     font-size: 20px;
 }
 
@@ -110,26 +243,36 @@
     color: #3f3f3f;
 }
 
-.choosing-content {
+.columns {
     display: flex;
-    padding-block: 3rem;
 }
 
-.choosing-reason-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
+.left-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    position: absolute;
+    margin-left: 110%;
+    z-index: 1;
+}
+.whyUsimg {
+    width: 54%;
+    height: auto;
+}
+.whyUsimg img {
+    height: auto;
+    max-width: 100%;
 }
 
-.choose-para .choose-para-head{
-    font-size: 24px;
+.right-img {
+    width: 80px px;
+    height: 80px;
+    border-radius: 80px;
+    position: absolute;
+    margin-left: -30%;
+    z-index: 1;
 }
 
-.choose-para .choose-para-body {
-    font-size: 18px;
-    color: #3f3f3f;
-}
 
 /* feature css */
 
