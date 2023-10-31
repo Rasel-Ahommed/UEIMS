@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="./asset/css/animate.min.css">
   <!-- fontawasome icon  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- galler css  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -87,8 +90,8 @@
   </header>
   <!-- header section end -->
   <main>
-    <section class="about container" id="about">
-      <div class="about-us py-5">
+    <section class="about " id="about">
+      <div class="about-us py-5 container">
         <div class="about-content">
           <div class="about-heading">
             <p class="h3">UEIMS এর পরিচিতি</p>
@@ -113,7 +116,7 @@
           </div>
         </div>
         <div class="about-image">
-          <img src="./asset/img/about.jpg" alt="about us" />
+          <img src="./asset/img/about.png" alt="about us" />
         </div>
       </div>
     </section>
@@ -144,6 +147,8 @@
               <div style="position:relative;margin-top:60px;" class="is-feature-reveal">
                 <div class="left-img bg-m-orange m-white levitate delay-4 " id="timeing"><i class="fas fa-user-clock"
                     style="font-size:35px;"></i></div>
+                <div class="left-img bg-m-orange m-white levitate delay-4 " id="timeing"><i
+                    class="fa-solid fa-graduation-cap" style="font-size:35px;"></i></div>
                 <div class="whyUsBox"> <!-- style="info-box-content" -->
                   <h5 class="title minimal-title m-white">উপস্থিতি এবং সময়সূচী ব্যবস্থাপনা</h5>
                   <p class="m-white">উপস্থিতি এবং সময় ব্যবস্থাপনা, এটি একটি শিক্ষা প্রতিষ্ঠানে ছাত্র-ছাত্রীর উপস্থিতি
@@ -169,13 +174,16 @@
                     style="font-size:35px;"></i></div>
                 <div class="whyUsBox"><!--  style="info-box-content" -->
                   <h5 class="title minimal-title m-white"> ছাত্র তথ্য ব্যবস্থাপনা</h5>
-                  <p class="m-white"> একাডেমিক প্রতিষ্ঠানে শিক্ষার্থীদের তথ্য দক্ষতা সংগ্রহ, সংগঠিত করুন এবং ব্যবহার করুন।
+                  <p class="m-white"> একাডেমিক প্রতিষ্ঠানে শিক্ষার্থীদের তথ্য দক্ষতা সংগ্রহ, সংগঠিত করুন এবং ব্যবহার
+                    করুন।
                   </p>
                 </div>
               </div>
               <div style="position:relative;margin-top:60px;" class="is-feature-reveal">
                 <div class="right-img bg-m-orange m-white levitate delay-6 " id="timeing"><i class="fas fa-file-alt"
                     style="font-size:35px;"></i></div>
+                <div class="right-img bg-m-orange m-white levitate delay-6 " id="timeing"><i
+                    class="fa-solid fa-graduation-cap" style="font-size:35px;"></i></div>
                 <div class="whyUsBox"><!--  style="info-box-content" -->
                   <h5 class="title minimal-title m-white">এডমিশন এন্ড এনরোলমেন্ট</h5>
                   <p class="m-white">শিক্ষামূলক প্রোগ্রামগুলিতে একটি নিরবচ্ছিন্ন রূপান্তরের জন্য ভর্তি এবং তালিকাভুক্তি
@@ -201,115 +209,456 @@
     </section>
 
     <!-- fetures section -->
-
     <section class="features">
-      <div class="main-feature py-5 container">
+      <div class="main-feature py-5">
+        <div class="container">
           <div class="choosing-heading">
             <p class="h3">UEIMS বৈশিষ্ট্যসমুহ</p>
             <p class="h4">
               কেন আমাদের নির্বাচন করেছে?
             </p>
           </div>
-        <div class="main-feature-list mt-5">
-          <div class="feature-card">
-            <div class="feature-card-img">
-              <div class="img-fancy-box"></div>
-              <img src="./asset/img/dashboard.png" alt="dashboard">
+          <div class="main-feature-list mt-5">
+            <div class="feature-card">
+              <div class="feature-card-img">
+                <div class="img-fancy-box"></div>
+                <img src="./asset/img/dashboard.png" alt="dashboard">
+              </div>
+              <div class="feature-card-heading">
+                <h4>
+                  ইউসার ফ্রেন্ডলি ড্যাশবোর্ড
+                </h4>
+              </div>
             </div>
-            <div class="feature-card-heading">
-              <h4>
-                ইউসার ফ্রেন্ডলি ড্যাশবোর্ড
-              </h4>
+            <div class="feature-card">
+              <div class="feature-card-img">
+                <div class="img-fancy-box"></div>
+                <img src="./asset/img/students.png" alt="students">
+              </div>
+              <div class="feature-card-heading">
+                <h4>
+                  সহজেই স্টুডেন্ড ব্যবস্থাপনা
+                </h4>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-img">
+                <div class="img-fancy-box"></div>
+                <img src="./asset/img/schedule.png" alt="schedule">
+              </div>
+              <div class="feature-card-heading">
+                <h4>
+                  সময়ের সঠিক ব্যবহার
+                </h4>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-img">
+                <div class="img-fancy-box"></div>
+                <img src="./asset/img/teacher.png" alt="teacher">
+              </div>
+              <div class="feature-card-heading">
+                <h4>
+                  সঠিকভাবে শিক্ষক ম্যানেজ করা
+                </h4>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-img">
+                <div class="img-fancy-box"></div>
+                <img src="./asset/img/payment-method.png" alt="payment-method">
+              </div>
+              <div class="feature-card-heading">
+                <h4>
+                  নিরাপদ লেনদেন
+                </h4>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-img">
+                <div class="img-fancy-box"></div>
+                <img src="./asset/img/attendance.png" alt="attendance">
+              </div>
+              <div class="feature-card-heading">
+                <h4>
+                  ক্লাসে শিক্ষার্থী উপস্থিতি গ্রহণ
+                </h4>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-img">
+                <div class="img-fancy-box"></div>
+                <img src="./asset/img/report.png" alt="report">
+              </div>
+              <div class="feature-card-heading">
+                <h4>
+                  রিপোর্ট কার্ড ম্যানেজমেন্ট
+                </h4>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-img">
+                <div class="img-fancy-box"></div>
+                <img src="./asset/img/study.png" alt="study">
+              </div>
+              <div class="feature-card-heading">
+                <h4>
+                  স্টাডি ট্রাক এবং এক্সাম ম্যানেজমেন্ট
+                </h4>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-img">
+                <div class="img-fancy-box"></div>
+                <img src="./asset/img/review.png" alt="review">
+              </div>
+              <div class="feature-card-heading">
+                <h4>
+                  টেস্টমোনিয়াল তৈরি করুন
+                </h4>
+              </div>
             </div>
           </div>
-          <div class="feature-card">
-            <div class="feature-card-img">
-              <div class="img-fancy-box"></div>
-              <img src="./asset/img/students.png" alt="students">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- our network section start  -->
+  <section>
+    <div class="ourNetwork">
+      <div class="container">
+        <div class="networdHero">
+          <div class="networkCard">
+            <img src="./asset/img/network1.png" alt="img">
+            <h2>১৮৭</h2>
+            <h3>স্কুল</h3>
+          </div>
+          <div class="networkCard">
+            <img src="./asset/img/network2.png" alt="img">
+            <h2>৩৭৫০০৩</h2>
+            <h3>শিক্ষার্থী</h3>
+          </div>
+          <div class="networkCard">
+            <img src="./asset/img/network3.png" alt="img">
+            <h2>৬৪</h2>
+            <h3>জেলা</h3>
+          </div>
+          <div class="networkCard">
+            <img src="./asset/img/network4.png" alt="img">
+            <h2>৪০</h2>
+            <h3>জনবল</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- our network section end  -->
+
+  <!-- FAQ section start  -->
+  <section>
+    <div class="faqsection">
+      <div class="container">
+        <div class="faqImgBox">
+          <div class="faqImg">
+            <img src="./asset/img/faq.png" alt="img">
+          </div>
+        </div>
+
+        <!-- fqa -->
+        <div class="faq">
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                UEIMS এর মূল বৈশিষ্ট্যগুলি কী কী?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  UEIMS-এর সাধারণ বৈশিষ্ট্যগুলির মধ্যে রয়েছে ছাত্র তথ্য ব্যবস্থাপনা, উপস্থিতি ট্র্যাকিং, গ্রেডবুক
+                  ব্যবস্থাপনা, কোর্সের সময়সূচী, আর্থিক ব্যবস্থাপনা এবং যোগাযোগের সরঞ্জাম। কিছু সিস্টেম অনলাইন লার্নিং
+                  এবং ভার্চুয়াল ক্লাসরুমের জন্য বৈশিষ্ট্যও অফার করে।
+                </div>
+              </div>
             </div>
-            <div class="feature-card-heading">
-              <h4>
-                সহজেই স্টুডেন্ড ব্যবস্থাপনা
-              </h4>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                UEIMS-এ ডেটা কতটা নিরাপদ?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  UEIMS (Unicorn Educational Institute Management System) তথ্য নিরাপত্তা ও গোপনীয়তা নিয়ে সতর্ক থাকে।
+                  এটি শিক্ষা প্রতিষ্ঠানের তথ্য প্রবণতা সংরক্ষণ এবং সুরক্ষিতভাবে ব্যবস্থাপনার জন্য তৈরি হয়েছে। UEIMS এর
+                  মূল লক্ষ্য হলো ব্যবহারকারীদের ব্যক্তিগত তথ্য সংরক্ষণ এবং তা নিরাপদ রাখা।
+
+                  তবে, যে কোনো বৈদ্যুতিন বা অকৌশল নিরাপত্তা প্রশ্নের জন্য, সর্বদা উচিত হবে এই সিস্টেমের উপর আস্থা করে
+                  নতুন ডেভেলপমেন্ট এবং নিরাপত্তা মানদণ্ডের সাথে যোগাযোগ করা।
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                UEIMS ব্যবহারকারীদের জন্য প্রযুক্তিগত সহায়তা এবং প্রশিক্ষণ প্রদান করা হয়?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  UEIM প্রযুক্তিগত সহায়তা এবং প্রশিক্ষণ প্রদানের
+                  জন্য প্রতিষ্ঠিত সেবা প্রদানকারী সংস্থা বা প্রতিষ্ঠানের কাছে যোগাযোগ করা উচিত। UEIMS ব্যবহার সম্পর্কে
+                  প্রশিক্ষণ প্রদানের মাধ্যমে ব্যবহারকারীদের প্রশিক্ষিত করা হয়।
+
+                  এছাড়াও, কোনো প্রয়োজনে বা যে কোনও প্রযুক্তিগত সমস্যার জন্য, আপনি সরাসরি UEIMS সংস্থার প্রতিষ্ঠানিক
+                  সংযোগ বা সাপোর্ট প্রতিষ্ঠানে যোগাযোগ করতে পারেন। এছাড়াও, তাদের ওয়েবসাইট বা সামগ্রিক সাহায্য ডেস্কের
+                  জন্য তাদের অফিশিয়াল সাইট পরিদর্শন করা যেতে পারে।
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                UEIMS দূর থেকে অ্যাক্সেস করা যেতে পারে?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  UEIMS সাধারণভাবে ইন্টারনেটের মাধ্যমে অ্যাক্সেস করা
+                  যেতে পারে। এটি একটি ওয়েব-ভিত্তিক সফটওয়্যার, তার মানে যে যেকোনো ডিভাইস যেখানে ইন্টারনেট সংযোগ থাকে
+                  (যেমন, কম্পিউটার, ট্যাবলেট, স্মার্টফোন), সেখান থেকে প্রবেশ করা যেতে পারে।
+
+                  অ্যাক্সেস করার জন্য প্রথমে আপনার ডিভাইসে ওয়েব ব্রাউজার খুলুন এবং UEIMS এর ওয়েব ঠিকানাটি লিখুন (এটি
+                  আপনার সংস্থার নির্ধারিত ঠিকানা হতে হবে)। এরপর সেখানে আপনার ব্যবহারকারীর নাম এবং পাসওয়ার্ড দিয়ে লগইন
+                  করুন।
+
+                  সহজভাবে বলা যায়, আপনি ইন্টারনেটে থাকলে যে কোন জায়গা থেকে UEIMS এ অ্যাক্সেস করতে পারেন, এবং তার জন্য
+                  কোনো বিশেষ সফটওয়্যার ইনস্টল করার প্রয়োজন নেই।
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                UEIMS কি সব ধরনের শিক্ষা প্রতিষ্ঠানের জন্য উপযুক্ত?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  UEIMS একটি বিশেষ সফটওয়্যার যা প্রাথমিক প্রযুক্তি
+                  শিক্ষা প্রতিষ্ঠান, মাধ্যমিক প্রতিষ্ঠান, উচ্চ শিক্ষা প্রতিষ্ঠান, কলেজ, মাদ্রাসা ইত্যাদি ধরনের
+                  শিক্ষা প্রতিষ্ঠানের জন্য উপযুক্ত।
+
+                  UEIMS প্রধানভাবে শিক্ষা প্রতিষ্ঠানের পরিচালনা এবং শিক্ষার্থী ম্যানেজমেন্ট সিস্টেম হিসেবে ব্যবহার হয়।
+                  এতে শিক্ষার্থী রেজিস্ট্রেশন, ক্লাস স্থিতি, ফি কালেকশন, শিক্ষক পরিচালনা, পরীক্ষা নিবন্ধন ইত্যাদি প্রধান
+                  বৈশিষ্ট্য রয়েছে।
+
+                  এটি প্রতিষ্ঠানটির প্রযুক্তিগত অংশ ও ডেটা সংরক্ষণ করে এবং শিক্ষা প্রযুক্তি ব্যবহার করে
+                  প্রতিষ্ঠানটির উন্নতির জন্য সাহায্য করে।
+
+                  সংক্ষেপে বলতে, UEIMS যেকোনো ধরনের শিক্ষা প্রতিষ্ঠানের জন্য উপযুক্ত হতে পারে, যেখানে শিক্ষা প্রদান করা
+                  হয়।
+                </div>
+              </div>
             </div>
           </div>
-          <div class="feature-card">
-            <div class="feature-card-img">
-              <div class="img-fancy-box"></div>
-              <img src="./asset/img/schedule.png" alt="schedule">
-            </div>
-            <div class="feature-card-heading">
-              <h4>
-                সময়ের সঠিক ব্যবহার
-              </h4>
-            </div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card-img">
-              <div class="img-fancy-box"></div>
-              <img src="./asset/img/teacher.png" alt="teacher">
-            </div>
-            <div class="feature-card-heading">
-              <h4>
-                সঠিকভাবে শিক্ষক ম্যানেজ করা
-              </h4>
-            </div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card-img">
-              <div class="img-fancy-box"></div>
-              <img src="./asset/img/payment-method.png" alt="payment-method">
-            </div>
-            <div class="feature-card-heading">
-              <h4>
-                নিরাপদ লেনদেন
-              </h4>
-            </div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card-img">
-              <div class="img-fancy-box"></div>
-              <img src="./asset/img/attendance.png" alt="attendance">
-            </div>
-            <div class="feature-card-heading">
-              <h4>
-                ক্লাসে শিক্ষার্থী উপস্থিতি গ্রহণ 
-              </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ section end -->
+
+  <!-- galler section start  -->
+  <section class="image-slider-container">
+    <div class="container">
+      <h1 class="image-slider-title">
+        গ্যালারি
+      </h1>
+      <div class="image-slider-heading">
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-con">
+              <img src="./asset/img/gallery/img1.webp" alt="">
+              <div class="slide-details">
+                <div class="movie-info">
+                  <h2 class="movie-name" title="">
+                    Satellite Town School in Khalishpur, Khulna.
+                  </h2>
+                  <p class="movie-views" title="">
+                    We are thrilled to announce a new partnership with Satellite Town School in Khalishpur, Khulna. 🏫
+                    They have chosen Unicorn for the creation of their website, and we couldn't be more excited about
+                    this collaboration! 🌟
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="feature-card">
-            <div class="feature-card-img">
-              <div class="img-fancy-box"></div>
-              <img src="./asset/img/report.png" alt="report">
-            </div>
-            <div class="feature-card-heading">
-              <h4>
-                রিপোর্ট কার্ড ম্যানেজমেন্ট
-              </h4>
-            </div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card-img">
-              <div class="img-fancy-box"></div>
-              <img src="./asset/img/study.png" alt="study">
-            </div>
-            <div class="feature-card-heading">
-              <h4>
-                স্টাডি ট্রাক এবং এক্সাম ম্যানেজমেন্ট
-              </h4>
+
+          <div class="swiper-slide">
+            <div class="slide-con">
+              <img src="./asset/img/gallery/img2.webp" alt="">
+              <div class="slide-details">
+                <div class="movie-info">
+                  <h2 class="movie-name" title="">
+                    Al-Uswah Academy, Rajshahi.
+                  </h2>
+                  <p class="movie-views" title="">
+                    Unicorn Software and Solution is thrilled to announce that Al-Uswah Academy in Rajshahi has chosen
+                    our Education Institute Management System (EIMS) for their institution. 📚🏫
+                    Today, we had the honor of witnessing the esteemed Principal Sir signing the agreement, marking the
+                    beginning of a promising partnership! 🤝
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="feature-card">
-            <div class="feature-card-img">
-              <div class="img-fancy-box"></div>
-              <img src="./asset/img/review.png" alt="review">
-            </div>
-            <div class="feature-card-heading">
-              <h4>
-                টেস্টমোনিয়াল তৈরি করুন
-              </h4>
+
+          <div class="swiper-slide">
+            <div class="slide-con">
+              <img src="./asset/img/gallery/img3.webp" alt="">
+              <div class="slide-details">
+                <div class="movie-info">
+                  <h2 class="movie-name" title="">
+                    BMD High School in Pangsha, Rajbari
+                  </h2>
+                  <p class="movie-views" title="">
+                    🏫 Unicorn Software is proud to announce our latest partnership with BMD High School in Pangsha,
+                    Rajbari. 🖥️ They've chosen us to create their school website, and we couldn't be more excited! 🦄✨
+                    This collaboration represents a step towards a more digitally connected and accessible education
+                    landscape.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+
+          <div class="swiper-slide">
+            <div class="slide-con">
+              <img src="./asset/img/gallery/img4.webp" alt="">
+              <div class="slide-details">
+                <div class="movie-info">
+                  <h2 class="movie-name" title="">
+                    Jashai High School, Rajbari
+                  </h2>
+                  <p class="movie-views" title="">
+                    Unicorn Software continues its mission to revolutionize education. We are thrilled to announce our
+                    partnership with Jashai High School, led by the dynamic Head Sir, Mr. Abul Hossain, who also serves
+                    as the Union Parishad Chairman in Jashai, Rajbari. 🏫✨
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-con">
+              <img src="./asset/img/gallery/img5.webp" alt="">
+              <div class="slide-details">
+                <div class="movie-info">
+                  <h2 class="movie-name" title="">
+                    Moukuri High School
+                  </h2>
+                  <p class="movie-views" title="">
+                    Mr. Asaduzzaman has chosen Unicorn to craft a dynamic school website, setting the stage for a
+                    digital journey like no other. 🖥️📚 Together, we'll redefine the online presence of this esteemed
+                    institution. 🦄💼 We're honored to be entrusted with this responsibility and look forward to shaping
+                    the future of Moukuri High School. Stay tuned for the magic we'll create! 🚀📜
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-con">
+              <img src="./asset/img/gallery/img6.webp" alt="">
+              <div class="slide-details">
+                <div class="movie-info">
+                  <h2 class="movie-name" title="">
+                    Educational Institute Management System presentation
+                  </h2>
+                  <p class="movie-views" title="">
+                    "📚👩‍🏫 Today marks a significant milestone as we gather for a vast meeting to discuss the future
+                    of EIMS (Educational Institute Management System). Exciting times ahead as we work towards enhancing
+                    education with technology! 🚀📊
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-con">
+              <img src="./asset/img/gallery/img7.webp" alt="">
+              <div class="slide-details">
+                <div class="movie-info">
+                  <h2 class="movie-name" title="">
+                    Pangsha Pilot Girl's High School,
+                  </h2>
+                  <p class="movie-views" title="">
+                    🏫 Our journey together starts with creating a cutting-edge school website, redefining digital
+                    presence in education. 🖥️📚 With immense gratitude, we welcome Pangsha Pilot Girl's High School
+                    under the Unicorn Software and Solutions umbrella. Alhamdulillah! 🙏 Stay tuned as we embark on this
+                    transformative partnership, dedicated to shaping the future of learning. 🚀🦄
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-con">
+              <img src="./asset/img/gallery/img8.webp" alt="">
+              <div class="slide-details">
+                <div class="movie-info">
+                  <h2 class="movie-name" title="">
+                    Rainagor Darul Ulum Islamia Fazal (B.A) Madrasa,
+                  </h2>
+                  <p class="movie-views" title="">
+                    Another milestone has been achieved! 🎉 Unicorn Software and Solutions has proudly joined hands with
+                    Rainagor Darul Ulum Islamia Fazal (B.A) Madrasa, ushering in a new era of digital education. 🖥️📚
+                    Our collaboration will bring forth a state-of-the-art school website and an advanced Education
+                    Institute Management Software (EIMS), enhancing the learning experience. 🦄🏫
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-con">
+              <img src="./asset/img/gallery/img9.webp" alt="">
+              <div class="slide-details">
+                <div class="movie-info">
+                  <h2 class="movie-name" title="">
+                    Machpara M L High School in Pangsha, Rajbari
+                  </h2>
+                  <p class="movie-views" title="">
+                    Thrilled to announce that Unicorn Software and Solutions has officially partnered with Machpara M L
+                    High School in Pangsha, Rajbari.
+                    🎉 Our collaboration entails the development of a cutting-edge school website and advanced Education
+                    Institute Management Software (EIMS). 🖥️📚 This initiative marks a significant step towards
+                    modernizing education, and we are proud that Machpara M L High School is now under the visionary
+                    umbrella of Unicorn
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-con">
+              <img src="./asset/img/gallery/img10.webp" alt="">
+              <div class="slide-details">
+                <div class="movie-info">
+                  <h2 class="movie-name" title="">
+                    এডুকেশনাল ইনিস্টিউট ম্যানেজমেন্ট সিস্টেম"#EIMS
+                  </h2>
+                  <p class="movie-views" title="">
+                    গত ২২শে জুলাই ২০২৩ ইউনিকর্ন সফটওয়্যার এন্ড সলিউশনসের পক্ষ থেকে রাজবাড়ী জেলার পাংশায় অনুষ্ঠিত হলো
+                    শিক্ষা প্রতিষ্ঠানে প্রযুক্তি নির্ভরতার উপর একটি আলোচনা অনুষ্ঠান।
+                    যেখানে উপস্থিত ছিলেন উপজেলার একাধিক স্কুলের সম্মানিত শিক্ষক মহোদয়গন।
+                    স্যারদের উপস্থিতি আমাদের করেছে সম্মানিত এবং আনন্দিত।
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -401,14 +750,112 @@
       </div>
     </section>
   </main>
+=======
+    </div>
+  </section>
+  <!-- galler section end  -->
 
-  <!-- test redoy branch -->
+  <!-- our user section start  -->
+  <section>
+    <div class="ourUser">
+      <div class="container">
+        <div class="userHeader">
+          <h2>আমরা বিশ্বাস তৈরি করি</h2>
+          <h4>১৮৭+ স্কুল আমাদের পণ্য ব্যবহার করে।</h4>
+        </div>
+
+
+        <!-- Grid -->
+        <div class="content-wrapper">
+          <div class="grid-clients five-grid">
+            <div class="columns is-vcentered">
+              <div class="column is-hidden-mobile"></div>
+              <!-- Client -->
+              <div class="column">
+                <a><img class="client" src="asset/img/OurUser/school1.png" alt=""></a>
+              </div>
+              <!-- Client -->
+              <div class="column">
+                <a><img class="client" src="asset/img/OurUser/school1.png" alt=""></a>
+              </div>
+              <!-- Client -->
+              <div class="column">
+                <a><img class="client" src="asset/img/OurUser/school1.png" alt=""></a>
+              </div>
+              <!-- Client -->
+              <div class="column">
+                <a><img class="client" src="asset/img/OurUser/school1.png" alt=""></a>
+              </div>
+              <!-- Client -->
+              <div class="column">
+                <a><img class="client" src="asset/img/OurUser/school1.png" alt=""></a>
+              </div>
+              <div class="column is-hidden-mobile"></div>
+            </div>
+            <div class="columns is-vcentered is-separator">
+              <div class="column is-hidden-mobile"></div>
+              <!-- Client -->
+              <div class="column">
+                <a><img class="client" src="asset/img/OurUser/school1.png" alt=""></a>
+              </div>
+              <!-- Client -->
+              <div class="column">
+                <a><img class="client" src="asset/img/OurUser/school1.png" alt=""></a>
+              </div>
+              <!-- Client -->
+              <div class="column">
+                <a><img class="client" src="asset/img/OurUser/school1.png" alt=""></a>
+              </div>
+              <!-- Client -->
+              <div class="column">
+                <a><img class="client" src="asset/img/OurUser/school1.png" alt=""></a>
+              </div>
+              <!-- Client -->
+              <div class="column">
+                <a><img class="client" src="asset/img/OurUser/school1.png" alt=""></a>
+              </div>
+              <div class="column is-hidden-mobile"></div>
+            </div>
+            <div class="columns is-vcentered is-separator">
+              <div class="column is-hidden-mobile"></div>
+              <!-- Client -->
+              <div class="column">
+                <a><img class="client" src="asset/img/OurUser/school1.png" alt=""></a>
+              </div>
+              <!-- Client -->
+              <div class="column">
+                <a><img class="client" src="asset/img/OurUser/school1.png" alt=""></a>
+              </div>
+              <!-- Client -->
+              <div class="column">
+                <a><img class="client" src="asset/img/OurUser/school1.png" alt=""></a>
+              </div>
+              <!-- Client -->
+              <div class="column">
+                <a><img class="client" src="asset/img/OurUser/school1.png" alt=""></a>
+              </div>
+              <!-- Client -->
+              <div class="column">
+                <a><img class="client" src="asset/img/OurUser/school1.png" alt=""></a>
+              </div>
+              <div class="column is-hidden-mobile"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+  <!-- our user section end  -->
 
   <!-- default js -->
   <script src="./asset/js/script.js"></script>
 
   <!-- bootstrap js -->
   <script src="./asset/js/bootstrap.min.js"></script>
+
+  <!-- gallery js  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./asset/js/gallery.js"></script>
 </body>
 
 </html>
