@@ -683,6 +683,7 @@ td .td-icon {
     padding-inline: calc(50px + 3vw);
     padding-block: 5px;
     border-radius: 5px;
+    width: calc(100px + 12vw);
 }
 
 .networkCard img {
@@ -965,6 +966,10 @@ td .td-icon {
     text-align: center;
 }
 
+.content-wrapper {
+  padding-top: 5rem;
+}
+
 .section .content-wrapper {
     padding-top: 40px;
     padding-top: 6rem;
@@ -1006,6 +1011,84 @@ td .td-icon {
 }
 /* our user section end  */
 
+
+
+/* contact us section start  */
+.contactHero{
+  padding-block: 5rem;
+}
+.contactHead{
+  display: flex;
+  justify-content: space-between;
+}
+.contactCard {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-align: center;
+  padding: 1rem 4rem;
+  width: 300px;
+  border-bottom: 2px solid #00C9FF;
+  border-radius: 5px;
+  margin-bottom: 4rem;
+}
+.contactCard img {
+  width: calc(20px + 3vw);
+  margin-bottom: 10px;
+}
+.contactCard p a{
+  text-decoration: none;
+  color: black;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.inputBox {
+  width: 33rem;
+}
+.inputBox input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #00C9FF;
+  border-radius: 5px;
+}
+.inputBox input:focus{
+  outline: 2px solid #83e4ff;
+  transition: all .1s ease-in;
+}
+
+.messageBox {
+  display: flex;
+  justify-content: center;
+}
+.message {
+  width: 100%;
+}
+.message textarea {
+  width: 100%;
+  border: 1px solid #00C9FF;
+  border-radius: 5px;
+  padding: 10px;
+}
+.message textarea:focus{
+  outline: 2px solid #83e4ff;
+  transition: all .1s ease-in;
+}
+.buttonBox{
+  display: flex;
+  justify-content: center;
+}
+button.btn.btn-primary.submit{
+  width: 20%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #00C9FF;
+  border: none;
+}
+/* contact us section end  */
+
 @media (max-width: 767px) {
   .about-us {
     display: block;
@@ -1024,3 +1107,4 @@ td .td-icon {
     display: block;
   }
 }
+
