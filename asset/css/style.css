@@ -600,6 +600,72 @@ img.shape7 {
     color: #f9f9f9;
 }
 
+/* with and without us table*/
+
+.benifit {
+  background-color: #f9f9f9;
+  padding-block: 3rem;
+}
+
+.soft-benifit {
+  display: flex;
+}
+
+.benifit-card {
+  margin: 20px;
+}
+
+.benifit-card .table {
+  border: 2px solid #c7c7c7;
+}
+
+.benifit-card .table{
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.benifit-card .table thead tr td{
+  font-size: 24px;
+  padding-block: 30px;
+}
+
+.benifit-card .table tbody tr td{
+  padding-block: 30px;
+  display: flex;
+  align-items: center;
+}
+
+td .td-icon {
+  padding-right: 10px;
+  font-size: 36px;
+}
+
+.benifit-without .benifit-card .table {
+  background-color: #CDEEB8;
+}
+
+.benifit-without .benifit-card .table .td-icon {
+  color: rgb(6, 165, 54);
+}
+
+.benifit-with .benifit-card .table .td-icon {
+  color: rgb(211, 35, 12);
+}
+
+.benifit-with .benifit-card .table {
+  background-color: #FEE5E8;
+}
+
+.benifit-card .table .tbody tr:nth-child(odd) {
+  background-color: #f8f8f8ad;
+}
+
+.benifit-card .table .tbody tr:nth-child(even) {
+  background-color: #f8f8f85e;
+}
+
 /* out network section start  */
 .ourNetwork {
     padding-block: 5rem;
@@ -628,7 +694,7 @@ img.shape7 {
 
 /* faq section start  */
 .faqsection {
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     padding-bottom: 2rem;
 }
 
@@ -940,3 +1006,21 @@ img.shape7 {
 }
 /* our user section end  */
 
+@media (max-width: 767px) {
+  .about-us {
+    display: block;
+    text-align: justify;
+  }
+
+  .about-heading {
+    text-align: center;
+  }
+
+  .about-image {
+    display: none;
+  }
+
+  .soft-benifit {
+    display: block;
+  }
+}
