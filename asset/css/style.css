@@ -264,6 +264,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .leftImg {
@@ -445,9 +446,9 @@ img.shape7 {
 
 /* why choose us section css */
 
-.choosing {
-  /* font-family: "nikosh"; */
-}
+/* .choosing {
+  font-family: "nikosh";
+} */
 
 .choosing-heading {
   text-align: center;
@@ -459,6 +460,7 @@ img.shape7 {
 
 .columnsMobile {
   display: flex;
+  justify-content: center;
 }
 
 
@@ -719,17 +721,18 @@ td .td-icon {
 
 .networdHero {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .networkCard {
   background-color: #F9F9F9;
   box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.25);
   text-align: center;
-  padding-inline: calc(50px + 3vw);
   padding-block: 5px;
   border-radius: 5px;
   width: calc(100px + 12vw);
+  margin: 10px;
 }
 
 .networkCard img {
@@ -812,6 +815,10 @@ td .td-icon {
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
   font-size: calc(10px + .5vw);
+}
+
+.accordion-item-body-content li{
+  list-style: none;
 }
 
 @media (max-width: 767px) {
@@ -1181,7 +1188,7 @@ button.btn.btn-primary.submit {
 
 @media screen and (min-width: 767px) and (max-width: 1024px) {
 
-  header setction 
+  /* header setction  */
   .laptop {
     width: calc(170px + 13vw);
   }
@@ -1268,10 +1275,6 @@ button.btn.btn-primary.submit {
     flex-wrap: wrap;
   }
 
-  .networkCard {
-    margin: 12px;
-  }
-
   .image-slider-container .swiper {
     margin-left: 45px;
   }
@@ -1286,7 +1289,7 @@ button.btn.btn-primary.submit {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .headercontant {
     flex-direction: column;
     justify-content: center;
@@ -1303,6 +1306,26 @@ button.btn.btn-primary.submit {
   .about-us {
     align-items: center;
     flex-direction: column;
+  }
+
+  .about-heading p{
+    text-align: center;
+    position: relative;
+  }
+
+  .about-heading p::before {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    content: '';
+    height: 4px;
+    background-color: #383838;
+  }
+
+  .about-content {
+    text-align: justify;
   }
 
   /* why us section  */
@@ -1346,20 +1369,6 @@ button.btn.btn-primary.submit {
     padding: 0 !important;
   }
 
-  /* network section  */
-  .networdHero {
-    display: block;
-  }
-
-  .netResponsive {
-    display: flex;
-    justify-content: center;
-  }
-
-  .networkCard {
-    margin-bottom: 20px;
-  }
-
   /* with ueims */
   .soft-benifit {
     justify-content: center;
@@ -1392,16 +1401,21 @@ button.btn.btn-primary.submit {
   }
 }
 
+@media (max-width: 399px) {
+  .leftContainer {
+    justify-content: center;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
 @media screen and (max-width:320px) {
   .navItem {
     margin-bottom: 2%;
   }
 
   .navContactInfo {
-    display: none;
-  }
-
-  .mobile {
     display: none;
   }
 
